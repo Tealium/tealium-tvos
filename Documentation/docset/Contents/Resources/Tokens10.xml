@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TEALVisitorProfileMetricAttribute.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfileMetricAttribute</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TEALVisitorProfileMetricAttribute.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileMetricAttribute/value</TokenIdentifier>
+			<Abstract type="html">Value of the given Metric</Abstract>
+			<DeclaredIn>TEALVisitorProfileMetricAttribute.h</DeclaredIn>
+			
+			<Declaration>- (float)value</Declaration>
+			
+			<ReturnValue><Abstract type="html">float value of the metric, default is 0.0</Abstract></ReturnValue>
+			<Anchor>//api/name/value</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
