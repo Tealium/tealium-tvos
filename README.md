@@ -1,4 +1,4 @@
-# Tealium Mobile Library for TVOS Version 1.0.0
+# Tealium Mobile Library for TVOS Version 5.0.0
 
 This mobile library leverages the power of Tealium's [TIQ™ Tag Management](http://tealium.com/products/tealium-iq-tag-management-system/), [AudienceStream™](http://tealium.com/products/audiencestream/) and [Data Access™](http://tealium.com/products/tealium-dataaccess/) products, or any combination of, making them natively available to iOS applications.
 
@@ -38,11 +38,12 @@ The Tealium DataAccess™ solution is a rich set of customer data services and f
 
 ## Change Log
 
-- 1.0.0 Initial Release
+- 5.0.0 Initial Release*
     - Multiton support
     - Collect Dispatch support
     - S2S Dispatch support
     - TIQ Mobile Publish Settings v5 support
+    - * This is the first tvOS release - version number matches publish setting options found in TIQ for simplicity
 
 ## License
 
