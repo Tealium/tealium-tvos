@@ -27,7 +27,7 @@ The Tealium DataAccess™ solution is a rich set of customer data services and f
 ## How To Get Started
 
 * Check out the [Getting Started]() guide for a step by step walkthough of adding Tealium to an extisting project.  
-* The public API can viewed online [here](), it is also provided in the [documentation directory](/tree/master/documentation) of this repo as html and docset for Xcode and Dash integration.
+* The public API can viewed online [here](http://tealium.github.io/tealium-tvos/), it is also provided in the [documentation directory](/tree/master/documentation) of this repo as html and docset for Xcode and Dash integration.
 * There are many other useful articles on our [community site](https://community.tealiumiq.com).
 
 ## Contact Us
