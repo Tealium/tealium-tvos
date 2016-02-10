@@ -30,14 +30,7 @@ class TealiumHelper : NSObject {
         
         let config = TEALConfiguration.init(account: "tealiummobile", profile: "demo", environment: "dev")
         
-        config.overridePublishSettingsURL = "https://tags.tiqcdn.com/qa6/tealiummobile/demo/dev/mobile.html"
-        
-        guard let tealium = Tealium.newInstanceForKey(tealiumInstanceID, configuration: config) else {
-            
-            // Any additional failure response here
-            
-            return
-        }
+        let tealium = Tealium.newInstanceForKey(tealiumInstanceID, configuration: config)
         
         tealium.setDelegate(sharedInstance())
         

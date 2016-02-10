@@ -2,8 +2,8 @@
 //  TealiumTVOS.h
 //  TealiumTVOS
 //
-//  Created by Jason Koo on 11/17/15.
-//  Copyright © 2015 Tealium Inc. All rights reserved.
+//  Created by Jason Koo on 2/10/16.
+//  Copyright © 2016 Tealium. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
