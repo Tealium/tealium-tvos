@@ -82,9 +82,13 @@
 		
 		<option value="//api/name/fetchVisitorProfileWithCompletion:">- fetchVisitorProfileWithCompletion:</option>
 		
+		<option value="//api/name/incrementedLifetimeValuesForKeys:amount:persistentData:">- incrementedLifetimeValuesForKeys:amount:persistentData:</option>
+		
 		<option value="//api/name/joinTraceWithToken:">- joinTraceWithToken:</option>
 		
 		<option value="//api/name/leaveTrace">- leaveTrace</option>
+		
+		<option value="//api/name/newLifecycleDataSourcesForType:date:persistentData:">- newLifecycleDataSourcesForType:date:persistentData:</option>
 		
 		<option value="//api/name/persistentDataSourcesCopy">- persistentDataSourcesCopy</option>
 		
@@ -1259,7 +1263,7 @@ object whenever the command is executed.</p></td>
 			
 			<div class="method-subsection brief-description">
 				<p>Last retrieved profile instance.  This is updated every time the profile is
-queried.  Depending on the settings the library was enabled with, this could
+queried.  Depending on the <a href="#//api/name/settings">settings</a> the library was enabled with, this could
 be after every sendEvent:customData: call or only on explicit request.</p>
 			</div>
 			
@@ -1352,6 +1356,149 @@ instance and an error should any problems occur.</p></td>
 </div>
 						</div>
 						
+
+						<a title="Lifecycle Methods" name="task_Lifecycle Methods"></a>
+						<h2 class="task-title">Lifecycle Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/incrementedLifetimeValuesForKeys:amount:persistentData:" title="incrementedLifetimeValuesForKeys:amount:persistentData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/incrementedLifetimeValuesForKeys:amount:persistentData:">&ndash;&nbsp;incrementedLifetimeValuesForKeys:amount:persistentData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get new values for given persistent keys.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *)incrementedLifetimeValuesForKeys:(NSArray *)<em>keys</em> amount:(int)<em>number</em> persistentData:(NSDictionary *)<em>persistentData</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>keys</code></th>
+						<td><p>NSArray of NSStrin keys to get new increment values for.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>number</code></th>
+						<td><p>Int value to increment target values by</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>increment</code></th>
+						<td><p>BOOL indicating whether the incremented amounts should be
+committed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An NSDictionary with the given keys and new values.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+Lifecycle.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/newLifecycleDataSourcesForType:date:persistentData:" title="newLifecycleDataSourcesForType:date:persistentData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/newLifecycleDataSourcesForType:date:persistentData:">&ndash;&nbsp;newLifecycleDataSourcesForType:date:persistentData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns all lifecycle related data for a given call type. Does NOT set any
+lifecycle data, use the updateLifecycleDataWithDate: method to set.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *)newLifecycleDataSourcesForType:(TEALLifecycleType)<em>type</em> date:(NSDate *)<em>date</em> persistentData:(NSDictionary *)<em>persistentData</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>The TEALLifecycleType of call.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>date</code></th>
+						<td><p>An optional NSDate override for the method call. If not provided,
+[NSDate date] will be used at time of call.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>increment</code></th>
+						<td><p>BOOL indicating whether or not the incremented values should
+be commited to persistence.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+Lifecycle.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
 					</div>
 					
 					
@@ -1364,7 +1511,7 @@ instance and an error should any problems occur.</p></td>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Tealium. All rights reserved. Updated: 2016-02-12</p>
+						<p class="copyright">Copyright &copy; 2016 Tealium. All rights reserved. Updated: 2016-03-09</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
