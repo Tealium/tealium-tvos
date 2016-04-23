@@ -72,8 +72,6 @@
 		
 		<option value="//api/name/addPersistentDataSources:">- addPersistentDataSources:</option>
 		
-		<option value="//api/name/addRemoteCommandID:description:targetQueue:responseBlock:">- addRemoteCommandID:description:targetQueue:responseBlock:</option>
-		
 		<option value="//api/name/addVolatileDataSources:">- addVolatileDataSources:</option>
 		
 		<option value="//api/name/cachedVisitorProfileCopy">- cachedVisitorProfileCopy</option>
@@ -82,13 +80,9 @@
 		
 		<option value="//api/name/fetchVisitorProfileWithCompletion:">- fetchVisitorProfileWithCompletion:</option>
 		
-		<option value="//api/name/incrementedLifetimeValuesForKeys:amount:persistentData:">- incrementedLifetimeValuesForKeys:amount:persistentData:</option>
-		
 		<option value="//api/name/joinTraceWithToken:">- joinTraceWithToken:</option>
 		
 		<option value="//api/name/leaveTrace">- leaveTrace</option>
-		
-		<option value="//api/name/newLifecycleDataSourcesForType:date:persistentData:">- newLifecycleDataSourcesForType:date:persistentData:</option>
 		
 		<option value="//api/name/persistentDataSourcesCopy">- persistentDataSourcesCopy</option>
 		
@@ -97,8 +91,6 @@
 		<option value="//api/name/profileURL">- profileURL</option>
 		
 		<option value="//api/name/removePersistentDataSourcesForKeys:">- removePersistentDataSourcesForKeys:</option>
-		
-		<option value="//api/name/removeRemoteCommandID:">- removeRemoteCommandID:</option>
 		
 		<option value="//api/name/removeVolatileDataSourcesForKeys:">- removeVolatileDataSourcesForKeys:</option>
 		
@@ -977,137 +969,6 @@ from the persistence store.</p></td>
 						</div>
 						
 
-						<a title="TagManagement Methods" name="task_TagManagement Methods"></a>
-						<h2 class="task-title">TagManagement Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/addRemoteCommandID:description:targetQueue:responseBlock:" title="addRemoteCommandID:description:targetQueue:responseBlock:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/addRemoteCommandID:description:targetQueue:responseBlock:">&ndash;&nbsp;addRemoteCommandID:description:targetQueue:responseBlock:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Adds a remote command block that can be triggered by the instance&rsquo;s TIQ templates.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)addRemoteCommandID:(NSString *_Nonnull)<em>commandID</em> description:(NSString *_Nullable)<em>description</em> targetQueue:(dispatch_queue_t _Nonnull)<em>queue</em> responseBlock:(void ( ^ _Nonnull ) ( TEALRemoteCommandResponse *_Nonnull response ))<em>responseBlock</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>commandID</code></th>
-						<td><p>NSString that identifies this code block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>description</code></th>
-						<td><p>Optional NSString description of the command block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>queue</code></th>
-						<td><p>The dispatch queue to run the command on.  Note, any UI
-commands must be done on the main thread.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>responseBlock</code></th>
-						<td><p>An optional block that returns a <a href="../Classes/TEALRemoteCommandResponse.html">TEALRemoteCommandResponse</a>
-object whenever the command is executed.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">Tealium+TagManagement.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/removeRemoteCommandID:" title="removeRemoteCommandID:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/removeRemoteCommandID:">&ndash;&nbsp;removeRemoteCommandID:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Removes a remote command block for the given commandID</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)removeRemoteCommandID:(NSString *_Nonnull)<em>commandID</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>commandID</code></th>
-						<td><p>NSString identifier for the command block to remove.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">Tealium+TagManagement.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
 						<a title="Collect Methods" name="task_Collect Methods"></a>
 						<h2 class="task-title">Collect Methods</h2>
 
@@ -1263,7 +1124,7 @@ object whenever the command is executed.</p></td>
 			
 			<div class="method-subsection brief-description">
 				<p>Last retrieved profile instance.  This is updated every time the profile is
-queried.  Depending on the <a href="#//api/name/settings">settings</a> the library was enabled with, this could
+queried.  Depending on the settings the library was enabled with, this could
 be after every sendEvent:customData: call or only on explicit request.</p>
 			</div>
 			
@@ -1356,149 +1217,6 @@ instance and an error should any problems occur.</p></td>
 </div>
 						</div>
 						
-
-						<a title="Lifecycle Methods" name="task_Lifecycle Methods"></a>
-						<h2 class="task-title">Lifecycle Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/incrementedLifetimeValuesForKeys:amount:persistentData:" title="incrementedLifetimeValuesForKeys:amount:persistentData:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/incrementedLifetimeValuesForKeys:amount:persistentData:">&ndash;&nbsp;incrementedLifetimeValuesForKeys:amount:persistentData:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Get new values for given persistent keys.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSDictionary *)incrementedLifetimeValuesForKeys:(NSArray *)<em>keys</em> amount:(int)<em>number</em> persistentData:(NSDictionary *)<em>persistentData</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>keys</code></th>
-						<td><p>NSArray of NSStrin keys to get new increment values for.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>number</code></th>
-						<td><p>Int value to increment target values by</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>increment</code></th>
-						<td><p>BOOL indicating whether the incremented amounts should be
-committed.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>An NSDictionary with the given keys and new values.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">Tealium+Lifecycle.m</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/newLifecycleDataSourcesForType:date:persistentData:" title="newLifecycleDataSourcesForType:date:persistentData:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/newLifecycleDataSourcesForType:date:persistentData:">&ndash;&nbsp;newLifecycleDataSourcesForType:date:persistentData:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Returns all lifecycle related data for a given call type. Does NOT set any
-lifecycle data, use the updateLifecycleDataWithDate: method to set.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSDictionary *)newLifecycleDataSourcesForType:(TEALLifecycleType)<em>type</em> date:(NSDate *)<em>date</em> persistentData:(NSDictionary *)<em>persistentData</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>type</code></th>
-						<td><p>The TEALLifecycleType of call.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>date</code></th>
-						<td><p>An optional NSDate override for the method call. If not provided,
-[NSDate date] will be used at time of call.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>increment</code></th>
-						<td><p>BOOL indicating whether or not the incremented values should
-be commited to persistence.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">Tealium+Lifecycle.m</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
 					</div>
 					
 					
@@ -1511,7 +1229,7 @@ be commited to persistence.</p></td>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Tealium. All rights reserved. Updated: 2016-03-09</p>
+						<p class="copyright">Copyright &copy; 2016 Tealium. All rights reserved. Updated: 2016-04-23</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
