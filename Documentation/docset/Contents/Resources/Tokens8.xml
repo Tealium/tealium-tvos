@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TEALVisitorProfileBaseAttribute.html">
+	<File path="Classes/TEALVisitorProfileDateAttribute.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfileBaseAttribute</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfileDateAttribute</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
+			<DeclaredIn>TEALVisitorProfileDateAttribute.h</DeclaredIn>
             
 			
 			<NodeRef refid="8"/>
@@ -13,29 +13,23 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileBaseAttribute/initWithType:</TokenIdentifier>
-			<Abstract type="html">Constructor method.</Abstract>
-			<DeclaredIn>TEALVisitorProfile+PrivateHeader.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileDateAttribute/timestamp</TokenIdentifier>
+			<Abstract type="html">Date as Unix timestamp</Abstract>
+			<DeclaredIn>TEALVisitorProfileDateAttribute.h</DeclaredIn>
 			
-			<Declaration>- (instancetype)initWithType:(TEALVisitorProfileAttributeType)type</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>type</Name>
-					<Abstract type="html">Type of TEALVisitorProfileAttributeType that this base attribute
-should be.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (NSTimeInterval)timestamp</Declaration>
 			
-			<Anchor>//api/name/initWithType:</Anchor>
+			<ReturnValue><Abstract type="html">time interval timetamp representation of a date</Abstract></ReturnValue>
+			<Anchor>//api/name/timestamp</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileBaseAttribute/isEqualAttribute:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileDateAttribute/isEqualAttribute:</TokenIdentifier>
 			<Abstract type="html">Compares relavent properties of two attributes for equality</Abstract>
-			<DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
+			<DeclaredIn>TEALVisitorProfileDateAttribute.m</DeclaredIn>
 			
-			<Declaration>- (BOOL)isEqualAttribute:(id)object</Declaration>
+			<Declaration>- (BOOL)isEqualAttribute:(TEALVisitorProfileBaseAttribute *)attribute</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>object</Name>
@@ -44,30 +38,6 @@ should be.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">boolean of true if relavent values are equal, regardles of object hashing or non relavant properties.</Abstract></ReturnValue>
 			<Anchor>//api/name/isEqualAttribute:</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileBaseAttribute/attributeID</TokenIdentifier>
-			<Abstract type="html">ID of the attribute</Abstract>
-			<DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
-			
-			<Declaration>- (NSString *)attributeID</Declaration>
-			
-			<ReturnValue><Abstract type="html">string value of the attribute&apos;s ID</Abstract></ReturnValue>
-			<Anchor>//api/name/attributeID</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileBaseAttribute/type</TokenIdentifier>
-			<Abstract type="html">Type of attribute</Abstract>
-			<DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
-			
-			<Declaration>- (TEALVisitorProfileAttributeType)type</Declaration>
-			
-			<ReturnValue><Abstract type="html">valid TEALVisitorProfileAttributeType type</Abstract></ReturnValue>
-			<Anchor>//api/name/type</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		

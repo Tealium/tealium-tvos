@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TEALErrorCode.html">
+	<File path="Constants/TEALVisitorProfilePollingFrequency.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TEALErrorCode</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>TEALError.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/TEALVisitorProfilePollingFrequency</TokenIdentifier>
+			<Abstract type="html">Unsigned integer value that controls the frequency at which the user&apos;s visitor profile is requested</Abstract>
+			<DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
             
 			
 			<NodeRef refid="18"/>
@@ -14,71 +14,23 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeUnknown</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALErrorCodeUnknown</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfilePollingFrequencyOnRequest</TokenIdentifier>
+            <Abstract type="html">On request only, will only poll with the fetchVisitorProfileWithCompletion: method
+     </Abstract>
+            <Declaration>TEALVisitorProfilePollingFrequencyOnRequest</Declaration>
             
-            <DeclaredIn>TEALError.h</DeclaredIn>
-            
-            <NodeRef refid="18"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeSuccess</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALErrorCodeSuccess</Declaration>
-            
-            <DeclaredIn>TEALError.h</DeclaredIn>
+            <DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
             
             <NodeRef refid="18"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeNoContent</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALErrorCodeNoContent</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfilePollingFrequencyAfterEveryEvent</TokenIdentifier>
+            <Abstract type="html">After each track event (trackEventWithTitle:dataSources: or trackViewWithTitle:dataSources:) an updated visitor profile will be requested.
+     </Abstract>
+            <Declaration>TEALVisitorProfilePollingFrequencyAfterEveryEvent</Declaration>
             
-            <DeclaredIn>TEALError.h</DeclaredIn>
-            
-            <NodeRef refid="18"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeMalformed</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALErrorCodeMalformed</Declaration>
-            
-            <DeclaredIn>TEALError.h</DeclaredIn>
-            
-            <NodeRef refid="18"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeFailure</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALErrorCodeFailure</Declaration>
-            
-            <DeclaredIn>TEALError.h</DeclaredIn>
-            
-            <NodeRef refid="18"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeNotAcceptable</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALErrorCodeNotAcceptable</Declaration>
-            
-            <DeclaredIn>TEALError.h</DeclaredIn>
-            
-            <NodeRef refid="18"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeException</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALErrorCodeException</Declaration>
-            
-            <DeclaredIn>TEALError.h</DeclaredIn>
+            <DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
             
             <NodeRef refid="18"/>
         </Token>
