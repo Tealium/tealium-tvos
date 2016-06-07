@@ -24,6 +24,7 @@ The module adds the additional following data sources for mapping:
 * lifecycle_secondsawake
 * lifecycle_priorsecondsawake
 * lifecycle_sleepcount
+* lifecycle_totalcrashcount
 * lifecycle_totallaunchcount
 * lifecycle_totalsecondsawake
 * lifecycle_totalsleepcount
@@ -61,19 +62,10 @@ These events are the possible values of the ```lifecycle_type``` data source.
 
 ## Automatic Tracking
 
-The module can be configured to automatically listen for the standard UIApplication
+The module is currently configured to automatically listen for the standard UIApplication
 notifications to automatically trigger launch, wake and sleep events.
 
-To enable:
-
-```objective-c
-
-// Any time after the newInstanceForKey: init call
-
-[Tealium instanceForKey:@"(uniqueInstanceId)" setLifecycleAutotrackingIsEnabled:YES];
-
-
-```
+API options to disable are not currently public.  Unlink or remove the TealiumTVOS_Lifecycle.framework from your project to remove lifecycle tracking.
 
 ### Launch Event
 
@@ -125,3 +117,6 @@ To manually track a ```wake``` event, call:
 [[Tealium instanceForKey:@"(uniqueInstanceId)"] wake];
 
 ```
+
+---
+Copyright (C) 2012-2016, Tealium Inc.

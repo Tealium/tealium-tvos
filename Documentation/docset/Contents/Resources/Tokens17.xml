@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TEALVisitorProfileAttributeType.html">
+	<File path="Constants/TEALDispatchType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TEALVisitorProfileAttributeType</TokenIdentifier>
-			<Abstract type="html">Type of Visitor Profile Attribute</Abstract>
-			<DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/TEALDispatchType</TokenIdentifier>
+			<Abstract type="html">Types of available dispatches</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
             
 			
 			<NodeRef refid="17"/>
@@ -14,67 +14,34 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeAudience</TokenIdentifier>
-            <Abstract type="html">Profile Audience
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeNone</TokenIdentifier>
+            <Abstract type="html">A dispatch with an unassigned type.
      </Abstract>
-            <Declaration>TEALVisitorProfileAttributeTypeAudience</Declaration>
+            <Declaration>TEALDispatchTypeNone</Declaration>
             
-            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
+            <DeclaredIn>TEALDispatch.h</DeclaredIn>
             
             <NodeRef refid="17"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeBadge</TokenIdentifier>
-            <Abstract type="html">Profile Badge
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeEvent</TokenIdentifier>
+            <Abstract type="html">Any non-view type dispatch.
      </Abstract>
-            <Declaration>TEALVisitorProfileAttributeTypeBadge</Declaration>
+            <Declaration>TEALDispatchTypeEvent</Declaration>
             
-            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
+            <DeclaredIn>TEALDispatch.h</DeclaredIn>
             
             <NodeRef refid="17"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeDate</TokenIdentifier>
-            <Abstract type="html">Profile Date
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeView</TokenIdentifier>
+            <Abstract type="html">Dispatch for view / screen appearances only.
      </Abstract>
-            <Declaration>TEALVisitorProfileAttributeTypeDate</Declaration>
+            <Declaration>TEALDispatchTypeView</Declaration>
             
-            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
-            
-            <NodeRef refid="17"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeFlag</TokenIdentifier>
-            <Abstract type="html">Profile Flag
-     </Abstract>
-            <Declaration>TEALVisitorProfileAttributeTypeFlag</Declaration>
-            
-            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
-            
-            <NodeRef refid="17"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeMetric</TokenIdentifier>
-            <Abstract type="html">Profile Metric
-     </Abstract>
-            <Declaration>TEALVisitorProfileAttributeTypeMetric</Declaration>
-            
-            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
-            
-            <NodeRef refid="17"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeProperty</TokenIdentifier>
-            <Abstract type="html">Profile Property or &quot;Trait&quot; in the AudienceStream App
-     </Abstract>
-            <Declaration>TEALVisitorProfileAttributeTypeProperty</Declaration>
-            
-            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
+            <DeclaredIn>TEALDispatch.h</DeclaredIn>
             
             <NodeRef refid="17"/>
         </Token>

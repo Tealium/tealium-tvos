@@ -37,7 +37,6 @@ class TealiumHelper : NSObject {
         
         tealium.setDelegate(sharedInstance())
         
-        tealium.setLifecycleAutotrackingIsEnabled(true)
         
     }
     
@@ -80,7 +79,7 @@ extension TealiumHelper : TealiumDelegate {
     
     func tealium(tealium: Tealium!, didQueueDispatch dispatch: TEALDispatch!) {
         
-        print("Did queue dispatch: \(dispatch)")
+        print("Did queue dispatch.")
         
         // Add optional code here to respond to queuing of dispatches.
 
@@ -88,7 +87,7 @@ extension TealiumHelper : TealiumDelegate {
     
     func tealium(tealium: Tealium!, didSendDispatch dispatch: TEALDispatch!) {
         
-        print("Did send dispatch: \(dispatch)")
+        print("Did send dispatch.")
         
         // Add optional code here to respond to sent dispatches.
 

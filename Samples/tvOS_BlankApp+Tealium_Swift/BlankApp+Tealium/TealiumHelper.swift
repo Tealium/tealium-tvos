@@ -36,6 +36,8 @@ class TealiumHelper : NSObject {
         
         TealiumHelper.incrementLifetimeValue(tealium, key: "launches", value: 1)
         
+        TealiumHelper.trackEvent("launch", dataSources: [TEALDataSourceKey_Autotracked:TEALDataSourceValue_False])
+
     }
     
     class func trackEvent(title: String, dataSources: [String:String]){

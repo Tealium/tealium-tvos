@@ -26,19 +26,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         TealiumHelper.startTracking()
         
-        TealiumHelper.trackEvent("launch", dataSources: [:])
+        TealiumHelper.trackEvent("launch", dataSources: ["autotracked":"false"])
         
     }
     
     func applicationWillResignActive(application: UIApplication) {
         
-        TealiumHelper.trackEvent("sleep", dataSources: [:])
+        TealiumHelper.trackEvent("sleep", dataSources: ["autotracked":"false"])
         
     }
     
-    func applicationDidBecomeActive(application: UIApplication) {
-        
-        TealiumHelper.trackEvent("wake", dataSources: [:])
-        
+    func applicationWillEnterForeground(application: UIApplication) {
+     
+        TealiumHelper.trackEvent("wake", dataSources: ["autotracked":"false"])
+
     }
+
 }

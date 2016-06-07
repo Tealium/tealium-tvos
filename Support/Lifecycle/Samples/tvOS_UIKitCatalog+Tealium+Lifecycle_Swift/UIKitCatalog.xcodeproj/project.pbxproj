@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		71E21C1A1C8F87EC0019DF45 /* TealiumTVOSLifecycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E21C191C8F87EC0019DF45 /* TealiumTVOSLifecycle.framework */; };
-		71E21C1F1C8F888F0019DF45 /* TealiumTVOSLifecycle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71E21C191C8F87EC0019DF45 /* TealiumTVOSLifecycle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		716060D41D5A2D14009D74DC /* TealiumTVOSLifecycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716060D31D5A2D14009D74DC /* TealiumTVOSLifecycle.framework */; };
+		716060D61D5A2D20009D74DC /* TealiumTVOSLifecycle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 716060D31D5A2D14009D74DC /* TealiumTVOSLifecycle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		71E21C211C8F88920019DF45 /* TealiumTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E21C171C8F87E80019DF45 /* TealiumTVOS.framework */; };
 		71E21C221C8F88920019DF45 /* TealiumTVOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71E21C171C8F87E80019DF45 /* TealiumTVOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		71E21C241C8F891A0019DF45 /* TealiumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E21C231C8F891A0019DF45 /* TealiumHelper.swift */; };
@@ -137,7 +137,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				71E21C221C8F88920019DF45 /* TealiumTVOS.framework in Embed Frameworks */,
-				71E21C1F1C8F888F0019DF45 /* TealiumTVOSLifecycle.framework in Embed Frameworks */,
+				716060D61D5A2D20009D74DC /* TealiumTVOSLifecycle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,9 +156,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		71E21C161C8F87800019DF45 /* TealiumTVOSBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TealiumTVOSBridgingHeader.h; path = ../../../TealiumTVOSBridgingHeader.h; sourceTree = "<group>"; };
+		714B830E1D4126440019ABD1 /* TealiumTVOS_LifecycleBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TealiumTVOS_LifecycleBridgingHeader.h; sourceTree = "<group>"; };
+		716060D31D5A2D14009D74DC /* TealiumTVOSLifecycle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumTVOSLifecycle.framework; path = ../../TealiumTVOSLifecycle.framework; sourceTree = "<group>"; };
 		71E21C171C8F87E80019DF45 /* TealiumTVOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumTVOS.framework; path = ../../../../TealiumTVOS.framework; sourceTree = "<group>"; };
-		71E21C191C8F87EC0019DF45 /* TealiumTVOSLifecycle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumTVOSLifecycle.framework; path = ../../TealiumTVOSLifecycle.framework; sourceTree = "<group>"; };
 		71E21C231C8F891A0019DF45 /* TealiumHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TealiumHelper.swift; sourceTree = "<group>"; };
 		B526F2871B989C7D00BADB57 /* CustomInputAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInputAccessoryView.swift; sourceTree = "<group>"; };
 		B526F2891B98A0BE00BADB57 /* TextFieldsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsViewController.swift; sourceTree = "<group>"; };
@@ -250,7 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71E21C211C8F88920019DF45 /* TealiumTVOS.framework in Frameworks */,
-				71E21C1A1C8F87EC0019DF45 /* TealiumTVOSLifecycle.framework in Frameworks */,
+				716060D41D5A2D14009D74DC /* TealiumTVOSLifecycle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +260,9 @@
 		71E21C151C8F87750019DF45 /* Tealium */ = {
 			isa = PBXGroup;
 			children = (
-				71E21C161C8F87800019DF45 /* TealiumTVOSBridgingHeader.h */,
+				714B830E1D4126440019ABD1 /* TealiumTVOS_LifecycleBridgingHeader.h */,
 				71E21C231C8F891A0019DF45 /* TealiumHelper.swift */,
-				71E21C191C8F87EC0019DF45 /* TealiumTVOSLifecycle.framework */,
+				716060D31D5A2D14009D74DC /* TealiumTVOSLifecycle.framework */,
 				71E21C171C8F87E80019DF45 /* TealiumTVOS.framework */,
 			);
 			name = Tealium;
@@ -846,7 +846,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UIKitCatalog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/../../../TealiumTVOSBridgingHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/TealiumTVOS_LifecycleBridgingHeader.h";
 				TOOLCHAINS = default;
 			};
 			name = Debug;
@@ -865,7 +865,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UIKitCatalog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/../../../TealiumTVOSBridgingHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/TealiumTVOS_LifecycleBridgingHeader.h";
 				TOOLCHAINS = default;
 			};
 			name = Release;
