@@ -17,29 +17,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         When the user clicks a Top Shelf item, the application will be asked
         to open the associated URL.
     */
-    func application(app: UIApplication, openURL url: NSURL, options: [String: AnyObject]) -> Bool {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any]) -> Bool {
         print("Application launched with URL: \(url)")
         return true
     }
     
-    func applicationDidFinishLaunching(application: UIApplication) {
+    func applicationDidFinishLaunching(_ application: UIApplication) {
         
         TealiumHelper.startTracking()
         
-        TealiumHelper.trackEvent("launch", dataSources: ["autotracked":"false"])
+        TealiumHelper.trackEvent(title: "launch", dataSources: [:])
         
     }
     
-    func applicationWillResignActive(application: UIApplication) {
+    func applicationWillResignActive(_ application: UIApplication) {
         
-        TealiumHelper.trackEvent("sleep", dataSources: ["autotracked":"false"])
+        TealiumHelper.trackEvent(title: "sleep", dataSources: [:])
         
     }
     
-    func applicationWillEnterForeground(application: UIApplication) {
-     
-        TealiumHelper.trackEvent("wake", dataSources: ["autotracked":"false"])
-
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        
+        TealiumHelper.trackEvent(title: "wake", dataSources: [:])
+        
     }
-
 }

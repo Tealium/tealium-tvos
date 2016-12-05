@@ -221,7 +221,6 @@
 		B5C792851B7BF52600A21550 /* CollectionViewContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewContainerViewController.swift; sourceTree = "<group>"; };
 		B5C792881B7C000B00A21550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FocusSamples.storyboard; sourceTree = "<group>"; };
 		B5C7928A1B7C0A6400A21550 /* CollectionViewContainerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewContainerCell.swift; sourceTree = "<group>"; };
-		B5D2D2D31B854DE5005CFC46 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B5D59EE11B85025C00D01057 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		B5DE40741B941868002313B2 /* GradientMaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientMaskView.swift; sourceTree = "<group>"; };
 		B5E0DE291B9DB37900A7A1BD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -361,7 +360,6 @@
 		B5A9352C1B738BDC00439392 = {
 			isa = PBXGroup;
 			children = (
-				B5D2D2D31B854DE5005CFC46 /* README.md */,
 				B5A935371B738BDC00439392 /* UIKitCatalog */,
 				716E66DE1BFFA12E00E94183 /* Tealium */,
 				B5391A731B7D37BF0033BAF8 /* UIKitCatalog Extension */,
@@ -484,9 +482,11 @@
 				TargetAttributes = {
 					B5391A701B7D37BF0033BAF8 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0810;
 					};
 					B5A935341B738BDC00439392 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -731,6 +731,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UIKitCatalog.UIKitCatalog-Extension";
 				PRODUCT_NAME = "UIKitCatalog+Tealium";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -742,6 +743,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UIKitCatalog.UIKitCatalog-Extension";
 				PRODUCT_NAME = "UIKitCatalog+Tealium";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -838,6 +840,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UIKitCatalog";
 				PRODUCT_NAME = "UIKitCatalog+Tealium";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
 				TOOLCHAINS = default;
 			};
 			name = Debug;
@@ -854,6 +857,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UIKitCatalog";
 				PRODUCT_NAME = "UIKitCatalog+Tealium";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
 				TOOLCHAINS = default;
 			};
 			name = Release;

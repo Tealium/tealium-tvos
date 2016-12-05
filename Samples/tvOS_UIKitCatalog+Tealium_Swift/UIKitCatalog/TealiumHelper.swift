@@ -16,6 +16,7 @@ import TealiumTVOS
 
 let tealiumInstanceID = "1"
 
+
 class TealiumHelper : NSObject {
     
     static let _sharedInstance = TealiumHelper()
@@ -29,29 +30,35 @@ class TealiumHelper : NSObject {
         
         let config = TEALConfiguration.init(account: "tealiummobile", profile: "demo", environment: "dev")
                 
-        let tealium = Tealium.newInstanceForKey(tealiumInstanceID, configuration: config)
+        let tealium = Tealium.newInstance(forKey: tealiumInstanceID, configuration: config)
         
         tealium.setDelegate(sharedInstance())
         
-        self.incrementLifetimeValue(tealium, key: "launches", value: 1)
+        self.incrementLifetimeValue(tealium: tealium, key: "launches", value: 1)
         
     }
     
     class func trackEvent(title: String, dataSources: [String:String]){
         
-        Tealium.instanceForKey(tealiumInstanceID)?.trackEventWithTitle(title, dataSources: dataSources)
+        Tealium.instance(forKey: tealiumInstanceID)?.trackEvent(withTitle: title, dataSources: dataSources)
         
     }
     
     class func trackView(title: String, dataSources: [String:String]){
         
-        Tealium.instanceForKey(tealiumInstanceID)?.trackViewWithTitle(title, dataSources: dataSources)
+        Tealium.instance(forKey: tealiumInstanceID)?.trackView(withTitle: title, dataSources: dataSources)
+        
+    }
+    
+    class func trackType(_ eventType: TEALDispatchType, title: String , dataSources: [String: AnyObject]?, completion: @escaping TEALDispatchBlock) {
+        
+        Tealium.instance(forKey: tealiumInstanceID)?.trackType(eventType, title: title, dataSources: dataSources!, completion: completion)
         
     }
     
     class func stopTracking(){
         
-        Tealium.destroyInstanceForKey(tealiumInstanceID)
+        Tealium.destroyInstance(forKey: tealiumInstanceID)
         
     }
 }
@@ -109,7 +116,7 @@ extension TealiumHelper{
         
         let persistentData = tealium.persistentDataSourcesCopy()
         
-        if let savedNumber = persistentData[key]?.integerValue {
+        if let savedNumber = (persistentData[key] as AnyObject).integerValue {
             
             oldNumber = savedNumber
             

@@ -1,0 +1,6 @@
+framework module TealiumTVOSLifecycleDevicesOnly {
+  umbrella header "TealiumTVOSLifecycleDevicesOnly.h"
+
+  export *
+  module * { export * }
+}
