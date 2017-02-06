@@ -482,10 +482,12 @@
 				TargetAttributes = {
 					B5391A701B7D37BF0033BAF8 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = XC939GDC9P;
 						LastSwiftMigration = 0810;
 					};
 					B5A935341B738BDC00439392 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = XC939GDC9P;
 						LastSwiftMigration = 0810;
 					};
 				};
@@ -726,6 +728,7 @@
 		B5391A7B1B7D37BF0033BAF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XC939GDC9P;
 				INFOPLIST_FILE = "$(SRCROOT)/UIKitCatalog Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UIKitCatalog.UIKitCatalog-Extension";
@@ -738,6 +741,7 @@
 		B5391A7C1B7D37BF0033BAF8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XC939GDC9P;
 				INFOPLIST_FILE = "$(SRCROOT)/UIKitCatalog Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UIKitCatalog.UIKitCatalog-Extension";
@@ -833,6 +837,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = XC939GDC9P;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../";
 				INFOPLIST_FILE = "$(SRCROOT)/UIKitCatalog/Info.plist";
@@ -850,6 +855,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = XC939GDC9P;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../";
 				INFOPLIST_FILE = "$(SRCROOT)/UIKitCatalog/Info.plist";

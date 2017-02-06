@@ -1,4 +1,4 @@
-# Tealium Mobile Library for TVOS 
+# Tealium Mobile Library for TVOS
 
 This mobile library leverages the power of Tealium's [TIQ™ Tag Management](http://tealium.com/products/tealium-iq-tag-management-system/), [AudienceStream™](http://tealium.com/products/audiencestream/) and [Data Access™](http://tealium.com/products/tealium-dataaccess/) products, or any combination of, making them natively available to tvOS applications. Please contact your Account Manager first to verify your agreement(s) for licensed products.
 
@@ -6,7 +6,7 @@ This mobile library leverages the power of Tealium's [TIQ™ Tag Management](htt
 
 Tealium provides the platform for crafting a modern, scalable and flexible marketing technology stack so you can easily connect and integrate all of your best-in-class solutions.
 
-### What is Tag Managment ?
+### What is Tag Management ?
 
 Tags are snippets of code that nearly every digital marketing vendor requires their customers to embed in the source code of their web sites and mobile applications.
 
@@ -37,6 +37,13 @@ The Tealium DataAccess™ solution is a rich set of customer data services and f
 * If you have **account specific questions** please contact your Tealium account manager
 
 ## Change Log
+
+- 5.1.2 Bug Fix
+    - Dispatch manager logic fix related to purged dispatches
+    - Protections added for saving dispatches to persistence
+
+- 5.1.1 Bug Fix
+    - Corrected issue related to call_type datasource
 
 - 5.1
     - New track with type API added and optional completion
@@ -104,4 +111,4 @@ Use of this software is subject to the terms and conditions of the license agree
 
 
 ---
-Copyright (C) 2012-2016, Tealium Inc.
+Copyright (C) 2012-2017, Tealium Inc.
