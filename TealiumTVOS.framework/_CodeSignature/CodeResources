@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TEALConfiguration.h</key>
 		<data>
-		90Ur3aPEDfARf8Gqol2hSG18A/0=
+		yI3OxiuhcekyYY21fMYtawRcs3I=
 		</data>
 		<key>Headers/TEALDataSourceConstants.h</key>
 		<data>
@@ -18,7 +18,11 @@
 		</data>
 		<key>Headers/TEALDispatch.h</key>
 		<data>
-		xuEH1puZtcRfnlfDfmb0IaalzSc=
+		krWJjxkr/cowooIZFo6INWsy8Qs=
+		</data>
+		<key>Headers/TEALLogLevels.h</key>
+		<data>
+		BKBDjfXgXlVvJarpL/FTIV1SuUA=
 		</data>
 		<key>Headers/TEALVisitorProfile.h</key>
 		<data>
@@ -42,11 +46,11 @@
 		</data>
 		<key>Headers/TealiumTVOS.h</key>
 		<data>
-		7d8zXD0SCQBlb+1DKLKB9dvkzhw=
+		+xmpHB5IC8S+w2hnMzPGEInfhqU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LKtDbbJT7K2V18HzgeuZgu510B8=
+		QpIRLd9oN64sPuhRGR6YdBV9f7o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,11 +74,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			90Ur3aPEDfARf8Gqol2hSG18A/0=
+			yI3OxiuhcekyYY21fMYtawRcs3I=
 			</data>
 			<key>hash2</key>
 			<data>
-			1CHZbgyru+n6KdVggvWoI8/Y3HjfXMvv8wzL4IdRSGA=
+			jbRYCZLe6FGNjQsySX4IY2N+y36EKKt4nsH14docR80=
 			</data>
 		</dict>
 		<key>Headers/TEALDataSourceConstants.h</key>
@@ -92,11 +96,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xuEH1puZtcRfnlfDfmb0IaalzSc=
+			krWJjxkr/cowooIZFo6INWsy8Qs=
 			</data>
 			<key>hash2</key>
 			<data>
-			TI5qV08g4F6nm5Kyo3YuR+VsbIecPTo3RsEfTVvcSAE=
+			pP8jVAFE7+yzgHBKsVtz+mCs1tLo2qmvLGGCgmR9LwI=
+			</data>
+		</dict>
+		<key>Headers/TEALLogLevels.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BKBDjfXgXlVvJarpL/FTIV1SuUA=
+			</data>
+			<key>hash2</key>
+			<data>
+			P1DSH7fcyeiYz1NVTbc6lEVUxD0zGwC2tzQ9koe1zSM=
 			</data>
 		</dict>
 		<key>Headers/TEALVisitorProfile.h</key>
@@ -158,11 +173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7d8zXD0SCQBlb+1DKLKB9dvkzhw=
+			+xmpHB5IC8S+w2hnMzPGEInfhqU=
 			</data>
 			<key>hash2</key>
 			<data>
-			xBBRj7barKFO3X9OQWpWhNPryIIzmzLU0KhjN/44B0M=
+			QyZbVr3jwaVCWtT1pt3Y3k1K8SxvDDyH2+4IewmpS10=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -194,6 +209,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
@@ -239,6 +259,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>
