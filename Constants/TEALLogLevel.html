@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>TEALDispatchType Constants Reference</title>
+	<title>TEALLogLevel Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">TEALDispatchType Constants Reference</h1>
+					<h1 class="title">TEALLogLevel Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>TEALDispatch.h</td>
+	<td>TEALLogLevels.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,11 +75,11 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">TEALDispatchType</h3>
+                    <h3 class="subsubtitle method-title">TEALLogLevel</h3>
                     
 					
 					<div class="section section-overview">
-                        <p>Types of available dispatches</p>
+                        <p>Unsigned integer value that controls the verbosity level of any log output.</p>
 					</div>
 					
 					
@@ -87,17 +87,15 @@
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSUInteger, TEALDispatchType ) {<br>
+                        <code>typedef NS_ENUM(NSUInteger, TEALLogLevel ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">TEALDispatchTypeActivity</a>,<br>
+                            &nbsp;&nbsp; <a href="">TEALLogLevelNone</a> = 0,<br>
                             
-                            &nbsp;&nbsp; <a href="">TEALDispatchTypeDerived</a>,<br>
+                            &nbsp;&nbsp; <a href="">TEALLogLevelProd</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">TEALDispatchTypeView</a>,<br>
+                            &nbsp;&nbsp; <a href="">TEALLogLevelQA</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">TEALDispatchTypeInteraction</a>,<br>
-                            
-                            &nbsp;&nbsp; <a href="">TEALDispatchTypeConversion</a>,<br>
+                            &nbsp;&nbsp; <a href="">TEALLogLevelDev</a>,<br>
                             
                             };</code>
                     
@@ -107,11 +105,11 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="TEALDispatchTypeActivity"></a><code>TEALDispatchTypeActivity</code></dt>
+                            <dt><a name="" title="TEALLogLevelNone"></a><code>TEALLogLevelNone</code></dt>
 <dd>
 
 
-<p>Dispatch type used to track monitiored behavioral actions.</p>
+<p>Nothing is logged to the console, this is the default.</p>
 
 
 
@@ -119,16 +117,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">TEALDispatch.h</code>.
+		Declared In <code class="declared-in-ref">TEALLogLevels.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="TEALDispatchTypeDerived"></a><code>TEALDispatchTypeDerived</code></dt>
+                            <dt><a name="" title="TEALLogLevelProd"></a><code>TEALLogLevelProd</code></dt>
 <dd>
 
 
-<p>Dispatch type that represents data about the user that was infered.</p>
+<p>Only errors reported.</p>
 
 
 
@@ -136,16 +134,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">TEALDispatch.h</code>.
+		Declared In <code class="declared-in-ref">TEALLogLevels.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="TEALDispatchTypeView"></a><code>TEALDispatchTypeView</code></dt>
+                            <dt><a name="" title="TEALLogLevelQA"></a><code>TEALLogLevelQA</code></dt>
 <dd>
 
 
-<p>Dispatch for view / screen appearances only.</p>
+<p>Provides warnings and errors only.</p>
 
 
 
@@ -153,16 +151,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">TEALDispatch.h</code>.
+		Declared In <code class="declared-in-ref">TEALLogLevels.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="TEALDispatchTypeInteraction"></a><code>TEALDispatchTypeInteraction</code></dt>
+                            <dt><a name="" title="TEALLogLevelDev"></a><code>TEALLogLevelDev</code></dt>
 <dd>
 
 
-<p>Dispatch type when an event represents the interaction between a user and an external resource</p>
+<p>Most verbose - Useful for debugging and verification during development.</p>
 
 
 
@@ -170,24 +168,7 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">TEALDispatch.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="TEALDispatchTypeConversion"></a><code>TEALDispatchTypeConversion</code></dt>
-<dd>
-
-
-<p>Dispatch type that represents events that dictate that a desired goal has been reached</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">TEALDispatch.h</code>.
+		Declared In <code class="declared-in-ref">TEALLogLevels.h</code>.
 	</p>
 	
 </dd>
@@ -204,7 +185,7 @@
                     
                     <div class="method-subsection declared-in-section">
                         <h4 class="method-subtitle">Declared In</h4>
-                        <p><code class="declared-in-ref">TEALDispatch.h</code></p>
+                        <p><code class="declared-in-ref">TEALLogLevels.h</code></p>
                     </div>
                     
                     
