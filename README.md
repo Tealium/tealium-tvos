@@ -1,4 +1,4 @@
-# Tealium Mobile Library for TVOS
+# Tealium Mobile Library for TVOS 
 
 This mobile library leverages the power of Tealium's [TIQ™ Tag Management](http://tealium.com/products/tealium-iq-tag-management-system/), [AudienceStream™](http://tealium.com/products/audiencestream/) and [Data Access™](http://tealium.com/products/tealium-dataaccess/) products, or any combination of, making them natively available to tvOS applications. Please contact your Account Manager first to verify your agreement(s) for licensed products.
 
@@ -6,7 +6,7 @@ This mobile library leverages the power of Tealium's [TIQ™ Tag Management](htt
 
 Tealium provides the platform for crafting a modern, scalable and flexible marketing technology stack so you can easily connect and integrate all of your best-in-class solutions.
 
-### What is Tag Management ?
+### What is Tag Managment ?
 
 Tags are snippets of code that nearly every digital marketing vendor requires their customers to embed in the source code of their web sites and mobile applications.
 
@@ -38,6 +38,10 @@ The Tealium DataAccess™ solution is a rich set of customer data services and f
 
 ## Change Log
 
+- 5.2.0
+    - @synchronization protection added to the captureTimeDatasources function
+    - Log warning if a call is made to uninitilized Tealium instance (previously silent fail).
+
 - 5.1.3 Bug Fix
     - Nullable attributes added to dispatch manager
     - Improved Tealium Logger handling to support more development side control 
@@ -57,7 +61,6 @@ The Tealium DataAccess™ solution is a rich set of customer data services and f
         - tealium_event (previously event_name / link_id)
         - app_uuid (previously uuid)
         - tealium_event_type
-
 
 - 5.0.4 Universal Data Sources & Bug Fixes
     - First track event now waits for webview ready when Tag Management option enabled

@@ -10,15 +10,15 @@
 		</data>
 		<key>Headers/Tealium+Lifecycle.h</key>
 		<data>
-		5S7d2f7tnxpqW3uwFrJjS8gRJmg=
+		jwnwow4GNzLrVp2ZmCwuyXnTNN8=
 		</data>
 		<key>Headers/TealiumTVOSLifecycleDevicesOnly.h</key>
 		<data>
-		HaYcW8okcBHshs+vfjALyFKMYFw=
+		4TIdjKyg5d1BERFnveyw4CCsyAY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		18Z/4GgQM+NVPW9WOf+icmzoCpY=
+		8f94KbTMdNdrGVrnKodKAXiJgDg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,22 +42,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5S7d2f7tnxpqW3uwFrJjS8gRJmg=
+			jwnwow4GNzLrVp2ZmCwuyXnTNN8=
 			</data>
 			<key>hash2</key>
 			<data>
-			jNLXDTSwR7DoMaHtVChS5gnQc0/lDDq2nGsT827rTUs=
+			orUMgnUCkjRWJOYt0fzSPAB9JnWR8O4YjqzsVljMSpg=
 			</data>
 		</dict>
 		<key>Headers/TealiumTVOSLifecycleDevicesOnly.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HaYcW8okcBHshs+vfjALyFKMYFw=
+			4TIdjKyg5d1BERFnveyw4CCsyAY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dc99z8rxOSk6SVyIlrej0mDj/vPSQm00Jn6irnbj25A=
+			1yvJrkVwf39r+FUDmGMXSz+ad7hgu1vEQxxYuP+Y7ks=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

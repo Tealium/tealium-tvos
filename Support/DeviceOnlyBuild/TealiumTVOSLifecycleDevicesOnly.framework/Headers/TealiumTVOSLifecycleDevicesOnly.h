@@ -16,7 +16,7 @@ FOUNDATION_EXPORT const unsigned char TealiumTVOS_Lifecycle_DevicesOnlyVersionSt
 
 // In this header, you should import all the public headers of your framework using statements like #import <TealiumTVOS_Lifecycle_DevicesOnly/PublicHeader.h>
 
-@import TealiumTVOS;
+@import TealiumTVOSDevicesOnly;
 
-#import <TealiumTVOSLifecycle/Tealium+Lifecycle.h>
-#import <TealiumTVOSLifecycle/TEALConfiguration+Lifecycle.h>
+#import <TealiumTVOSLifecycleDevicesOnly/Tealium+Lifecycle.h>
+#import <TealiumTVOSLifecycleDevicesOnly/TEALConfiguration+Lifecycle.h>

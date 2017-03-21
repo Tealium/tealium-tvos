@@ -25,9 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidFinishLaunching(_ application: UIApplication) {
         
         TealiumHelper.startTracking()
-        
-        TealiumHelper.trackEvent(title: "launch", dataSources: [:])
-        
+                
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
