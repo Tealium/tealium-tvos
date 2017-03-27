@@ -38,6 +38,10 @@ The Tealium DataAccess™ solution is a rich set of customer data services and f
 
 ## Change Log
 
+- 5.2.1
+    - Lifecycle module fix: Missing wake detection
+    - Lifecycle module fix: Errant didDetectCrash=true when no actual crash occurred
+
 - 5.2.0
     - @synchronization protection added to the captureTimeDatasources function
     - Log warning if a call is made to uninitilized Tealium instance (previously silent fail).

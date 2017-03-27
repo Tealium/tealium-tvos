@@ -65,7 +65,7 @@ class TealiumHelper : NSObject {
 
 extension TealiumHelper : TealiumDelegate {
     
-    func tealium(tealium: Tealium!, shouldDropDispatch dispatch: TEALDispatch!) -> Bool {
+    @nonobjc func tealium(_ shouldDroptealium: Tealium!, shouldDropDispatch dispatch: TEALDispatch!) -> Bool {
         
         // Add optional tracking suppression logic here - returning true will destroy
         // any processed dispatch so some conditional must eventually return false
@@ -73,7 +73,7 @@ extension TealiumHelper : TealiumDelegate {
         return false
     }
     
-    func tealium(tealium: Tealium!, shouldQueueDispatch dispatch: TEALDispatch!) -> Bool {
+    func tealium(_ tealium: Tealium!, shouldQueue dispatch: TEALDispatch!) -> Bool {
         
         // Add optional queuing / saving logic here - returning true will save
         // a dispatch so some condition must eventually return false.
@@ -81,7 +81,7 @@ extension TealiumHelper : TealiumDelegate {
         return false
     }
     
-    func tealium(tealium: Tealium!, didQueueDispatch dispatch: TEALDispatch!) {
+    func tealium(_ tealium: Tealium!, didQueue dispatch: TEALDispatch!) {
         
         print("Did queue dispatch: \(dispatch)")
         
@@ -89,7 +89,7 @@ extension TealiumHelper : TealiumDelegate {
 
     }
     
-    func tealium(tealium: Tealium!, didSendDispatch dispatch: TEALDispatch!) {
+    func tealium(_ tealium: Tealium!, didSend dispatch: TEALDispatch!) {
         
         print("Did send dispatch: \(dispatch)")
         
@@ -97,7 +97,7 @@ extension TealiumHelper : TealiumDelegate {
 
     }
     
-    func tealium(tealium: Tealium!, webViewIsReady webView: AnyObject!) {
+    func tealium(_ tealium: Tealium!, webViewIsReady webView: Any!) {
 
         // Use this to interact with the Tag Management Dispatcher's webview - available only if Tag Management enabled via remote settings.
 
