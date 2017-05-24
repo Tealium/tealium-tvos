@@ -30,6 +30,8 @@ class ButtonsViewController: UIViewController {
             to call this action for the UIControlEventPrimaryActionTriggered event.
         */
         print("A button was clicked.")
+        
+        TealiumHelper.trackEvent("buttonClicked", dataSources: [String:String]())
     }
     
     // MARK: Convenience

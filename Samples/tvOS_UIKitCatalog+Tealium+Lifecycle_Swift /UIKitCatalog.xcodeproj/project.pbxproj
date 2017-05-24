@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71ABB40C1ED5EF2B00EDE824 /* TealiumTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ABB40A1ED5ED4800EDE824 /* TealiumTVOS.framework */; };
+		71ABB40D1ED5EF2B00EDE824 /* TealiumTVOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71ABB40A1ED5ED4800EDE824 /* TealiumTVOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		71E21C1A1C8F87EC0019DF45 /* TealiumTVOSLifecycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E21C191C8F87EC0019DF45 /* TealiumTVOSLifecycle.framework */; };
 		71E21C1F1C8F888F0019DF45 /* TealiumTVOSLifecycle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71E21C191C8F87EC0019DF45 /* TealiumTVOSLifecycle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		71E21C211C8F88920019DF45 /* TealiumTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E21C171C8F87E80019DF45 /* TealiumTVOS.framework */; };
-		71E21C221C8F88920019DF45 /* TealiumTVOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71E21C171C8F87E80019DF45 /* TealiumTVOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		71E21C241C8F891A0019DF45 /* TealiumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E21C231C8F891A0019DF45 /* TealiumHelper.swift */; };
 		B51247761B8D2A2B008A96B2 /* Lola 1 Large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5E234671B8CDF0400D91DA0 /* Lola 1 Large.jpg */; };
 		B51247771B8D2A2B008A96B2 /* Lola 2 Large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5E234681B8CDF0400D91DA0 /* Lola 2 Large.jpg */; };
@@ -136,7 +136,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				71E21C221C8F88920019DF45 /* TealiumTVOS.framework in Embed Frameworks */,
+				71ABB40D1ED5EF2B00EDE824 /* TealiumTVOS.framework in Embed Frameworks */,
 				71E21C1F1C8F888F0019DF45 /* TealiumTVOSLifecycle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -156,8 +156,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		71E21C161C8F87800019DF45 /* TealiumTVOSBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TealiumTVOSBridgingHeader.h; path = ../../../TealiumTVOSBridgingHeader.h; sourceTree = "<group>"; };
-		71E21C171C8F87E80019DF45 /* TealiumTVOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumTVOS.framework; path = ../../../../TealiumTVOS.framework; sourceTree = "<group>"; };
+		71ABB4091ED5ED1F00EDE824 /* TealiumTVOSBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TealiumTVOSBridgingHeader.h; sourceTree = "<group>"; };
+		71ABB40A1ED5ED4800EDE824 /* TealiumTVOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumTVOS.framework; path = ../../TealiumTVOS.framework; sourceTree = "<group>"; };
 		71E21C191C8F87EC0019DF45 /* TealiumTVOSLifecycle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumTVOSLifecycle.framework; path = ../../TealiumTVOSLifecycle.framework; sourceTree = "<group>"; };
 		71E21C231C8F891A0019DF45 /* TealiumHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TealiumHelper.swift; sourceTree = "<group>"; };
 		B526F2871B989C7D00BADB57 /* CustomInputAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInputAccessoryView.swift; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71E21C211C8F88920019DF45 /* TealiumTVOS.framework in Frameworks */,
+				71ABB40C1ED5EF2B00EDE824 /* TealiumTVOS.framework in Frameworks */,
 				71E21C1A1C8F87EC0019DF45 /* TealiumTVOSLifecycle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,10 +260,10 @@
 		71E21C151C8F87750019DF45 /* Tealium */ = {
 			isa = PBXGroup;
 			children = (
-				71E21C161C8F87800019DF45 /* TealiumTVOSBridgingHeader.h */,
+				71ABB4091ED5ED1F00EDE824 /* TealiumTVOSBridgingHeader.h */,
 				71E21C231C8F891A0019DF45 /* TealiumHelper.swift */,
 				71E21C191C8F87EC0019DF45 /* TealiumTVOSLifecycle.framework */,
-				71E21C171C8F87E80019DF45 /* TealiumTVOS.framework */,
+				71ABB40A1ED5ED4800EDE824 /* TealiumTVOS.framework */,
 			);
 			name = Tealium;
 			sourceTree = "<group>";
@@ -841,6 +841,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../../",
@@ -850,7 +851,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UIKitCatalog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/../../../TealiumTVOSBridgingHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/TealiumTVOSBridgingHeader.h";
 				SWIFT_VERSION = 3.0;
 				TOOLCHAINS = default;
 			};
@@ -861,6 +862,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../../",
@@ -870,7 +872,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UIKitCatalog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/../../../TealiumTVOSBridgingHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/TealiumTVOSBridgingHeader.h";
 				SWIFT_VERSION = 3.0;
 				TOOLCHAINS = default;
 			};
