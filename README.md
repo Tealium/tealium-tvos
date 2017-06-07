@@ -1,6 +1,6 @@
 # Tealium Mobile Library for TVOS 
 
-This mobile library leverages the power of Tealium's [TIQ™ Tag Management](http://tealium.com/products/tealium-iq-tag-management-system/), [AudienceStream™](http://tealium.com/products/audiencestream/) and [Data Access™](http://tealium.com/products/tealium-dataaccess/) products, or any combination of, making them natively available to tvOS applications. Please contact your Account Manager first to verify your agreement(s) for licensed products.
+This mobile library leverages the power of [AudienceStream™](http://tealium.com/products/audiencestream/) and [Data Access™](http://tealium.com/products/tealium-dataaccess/) products, or any combination of, making them natively available to tvOS applications. Please contact your Account Manager first to verify your agreement(s) for licensed products.
 
 ## What does Tealium do?
 
@@ -37,6 +37,11 @@ The Tealium DataAccess™ solution is a rich set of customer data services and f
 * If you have **account specific questions** please contact your Tealium account manager
 
 ## Change Log
+
+- 5.3.0
+    - Configuration updated with new initializer that takes a 'datasource' arg - 6 digit alphanumeric UDH Datasource Id
+    - Removed variable:
+        - page_type
 
 - 5.2.1
     - Lifecycle module fix: Missing wake detection

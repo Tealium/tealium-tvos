@@ -32,9 +32,7 @@ class TealiumHelper : NSObject {
         let tealium = Tealium.newInstance(forKey: tealiumInstanceID, configuration: config)
         
         tealium.setDelegate(sharedInstance())
-        
-        tealium.setLifecycleAutotrackingIsEnabled(true)
-        
+                
     }
     
     class func trackType(_ eventType: TEALDispatchType, title: String , dataSources: [String: AnyObject]?, completion: @escaping TEALDispatchBlock) {
