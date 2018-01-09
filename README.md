@@ -6,7 +6,7 @@ This mobile library leverages the power of [AudienceStream™](http://tealium.co
 
 Tealium provides the platform for crafting a modern, scalable and flexible marketing technology stack so you can easily connect and integrate all of your best-in-class solutions.
 
-### What is Tag Managment ?
+### What is Tag Management ?
 
 Tags are snippets of code that nearly every digital marketing vendor requires their customers to embed in the source code of their web sites and mobile applications.
 
@@ -38,6 +38,11 @@ The Tealium DataAccess™ solution is a rich set of customer data services and f
 
 ## Change Log
 
+- 5.3.1
+    - Library bug fixes
+      - NSDictionary was mutated while being enumerated
+      - Memory leak
+      - UIKit call performed on non-UIKit thread (this change may affect the behavior of screen_orientation)
 - 5.3.0
     - Configuration updated with new initializer that takes a 'datasource' arg - 6 digit alphanumeric UDH Datasource Id
     - Removed variable:
