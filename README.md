@@ -38,6 +38,9 @@ The Tealium DataAccess™ solution is a rich set of customer data services and f
 
 ## Change Log
 
+- 5.3.2
+    - Library bug fixes
+      - Corrected sending task to an invalid NSURLSession
 - 5.3.1
     - Library bug fixes
       - NSDictionary was mutated while being enumerated
