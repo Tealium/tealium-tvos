@@ -24,6 +24,8 @@ FOUNDATION_EXPORT const unsigned char TealiumTVOSVersionString[];
 #import <TealiumTVOS/TEALConfiguration+Collect.h>
 #import <TealiumTVOS/TEALConfiguration.h>
 #import <TealiumTVOS/TEALDataSourceConstants.h>
+#import <TealiumTVOS/TEALConsentConstants.h>
+#import <TealiumTVOS/TEALConsentManager.h>
 #import <TealiumTVOS/TEALDispatch.h>
 #import <TealiumTVOS/TEALLogLevels.h>
 #import <TealiumTVOS/TEALVisitorProfile.h>
