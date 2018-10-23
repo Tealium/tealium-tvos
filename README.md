@@ -37,7 +37,24 @@ The Tealium DataAccess™ solution is a rich set of customer data services and f
 * If you have **account specific questions** please contact your Tealium account manager
 
 ## Change Log
-
+- 5.4.5
+  - Added millisecond-precise timestamp variable (timestamp_unix_milliseconds)
+- 5.4.4
+  - Rebuild of WatchOS platform to support arm64_32 architecture
+  - Refactoring of TEALConsentStatus enum to prevent clashes
+  - Bug Fix
+    - edge case where some duplicate events would occur on launch
+- 5.4.3
+  - Support for [HTTP Collect API](https://community.tealiumiq.com/t5/Universal-Data-Hub/Tealium-Collect-HTTP-API/ta-p/16893). This is the default value but is configurable.
+- 5.4.2
+  - Variable tealium_session_id updated to persist for 30 minutes. This value is configurable. 
+- 5.4.1
+  - Bug fix
+    - Corrected Lifecycle crash on start
+- 5.4.0
+  - Consent Manager release
+  - Library bug fix
+    - Missing device variable in payload
 - 5.3.2
     - Library bug fixes
       - Corrected sending task to an invalid NSURLSession
