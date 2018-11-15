@@ -12,17 +12,17 @@
 		<data>
 		HzxNGo1ETfrZaCC1cNokr+q/ojY=
 		</data>
-		<key>Headers/TealiumTVOSLifecycleDevicesOnly.h</key>
+		<key>Headers/TealiumTVOSLifecycle.h</key>
 		<data>
-		4TIdjKyg5d1BERFnveyw4CCsyAY=
+		g1X8A6841ALBXYsq9+x3jSSOmRA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		h2YythOCQkbmRJt4ufjkcZkFYMU=
+		CIE+pPnmz6yLXdRuEp4McRH6/p4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		D7zCi2kUDkkcCOjoCk5Xa1l8K6M=
+		0z+EbNfkeG/lZTLdFDaGd2ufsCA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -49,32 +49,32 @@
 			OuZS+RWMPd2XggdvqFEdi12SKlRJ0SfQUGj9TdVQftI=
 			</data>
 		</dict>
-		<key>Headers/TealiumTVOSLifecycleDevicesOnly.h</key>
+		<key>Headers/TealiumTVOSLifecycle.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4TIdjKyg5d1BERFnveyw4CCsyAY=
+			g1X8A6841ALBXYsq9+x3jSSOmRA=
 			</data>
 			<key>hash2</key>
 			<data>
-			1yvJrkVwf39r+FUDmGMXSz+ad7hgu1vEQxxYuP+Y7ks=
+			6zCO4kqBglMIpue139zz7cbckCoccPL0U9SaBKtUMcs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			D7zCi2kUDkkcCOjoCk5Xa1l8K6M=
+			0z+EbNfkeG/lZTLdFDaGd2ufsCA=
 			</data>
 			<key>hash2</key>
 			<data>
-			hzm/orBzV97cqQVKyFL5q2hGLMZqbl13E/OV7Xsp+Sw=
+			xDGtOuwv+5mMyNfYHptA8YKC8nzgvEAIdKHLNzStQS4=
 			</data>
 		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -105,24 +105,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -158,13 +146,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>

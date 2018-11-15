@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TEALConfiguration.h</key>
 		<data>
-		xe5xzKGTXnOBXOXkezgJAL6spcU=
+		Mg8k9Eu1VWtVoC+0BqDFCINDnFw=
 		</data>
 		<key>Headers/TEALConsentConstants.h</key>
 		<data>
@@ -40,6 +40,10 @@
 		<data>
 		BKBDjfXgXlVvJarpL/FTIV1SuUA=
 		</data>
+		<key>Headers/TEALSettingsFactory.h</key>
+		<data>
+		8eEEvrQv/QvhXLme+lsYAh7Bfcs=
+		</data>
 		<key>Headers/TEALVisitorProfile.h</key>
 		<data>
 		Co7NozReVnNzNtDu2xFV9fzek1k=
@@ -66,7 +70,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		W4aD1GiJmrJdLcPJxhrNK4sFbzA=
+		UpErYRoqqEzIgbPZT2fK5Pgu5Qk=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		N6Rr9FWaxqiSgz5rTLDi3VCDZw8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -86,11 +94,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xe5xzKGTXnOBXOXkezgJAL6spcU=
+			Mg8k9Eu1VWtVoC+0BqDFCINDnFw=
 			</data>
 			<key>hash2</key>
 			<data>
-			mzHMvG4lLoauaM6VZHiQ81xlhDai0C4+GY/qN9CkXao=
+			5Ak9+cpIyx+2mYCXsHTShkFdKZsSe0UHJFeuxoLeiG4=
 			</data>
 		</dict>
 		<key>Headers/TEALConsentConstants.h</key>
@@ -170,6 +178,17 @@
 			P1DSH7fcyeiYz1NVTbc6lEVUxD0zGwC2tzQ9koe1zSM=
 			</data>
 		</dict>
+		<key>Headers/TEALSettingsFactory.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8eEEvrQv/QvhXLme+lsYAh7Bfcs=
+			</data>
+			<key>hash2</key>
+			<data>
+			xWfv+87F2EayA8TnKSW+Cb12419xSc97AoE1/GbGfXQ=
+			</data>
+		</dict>
 		<key>Headers/TEALVisitorProfile.h</key>
 		<dict>
 			<key>hash</key>
@@ -236,10 +255,21 @@
 			n8ig6FmpRm1Q77cDo6UJJplTih0BujGm4GmuB288yfI=
 			</data>
 		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N6Rr9FWaxqiSgz5rTLDi3VCDZw8=
+			</data>
+			<key>hash2</key>
+			<data>
+			KCQlgaCLSrabUtY8UxGaH5MxasqYDA29JUDHzfP0Acc=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -270,24 +300,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -323,13 +341,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>
