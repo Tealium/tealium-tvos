@@ -1,0 +1,6 @@
+framework module TealiumTVOS {
+  umbrella header "TealiumTVOS.h"
+
+  export *
+  module * { export * }
+}
