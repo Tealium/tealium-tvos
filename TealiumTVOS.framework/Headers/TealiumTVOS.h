@@ -30,3 +30,9 @@ FOUNDATION_EXPORT const unsigned char TealiumTVOSVersionString[];
 #import <TealiumTVOS/TEALLogLevels.h>
 #import <TealiumTVOS/TEALVisitorProfile.h>
 #import <TealiumTVOS/TEALVisitorProfileCurrentVisit.h>
+#import <TealiumTVOS/TEALVisitorProfileAudienceAttribute.h>
+#import <TealiumTVOS/TEALVisitorProfileBadgeAttribute.h>
+#import <TealiumTVOS/TEALVisitorProfileDateAttribute.h>
+#import <TealiumTVOS/TEALVisitorProfileFlagAttribute.h>
+#import <TealiumTVOS/TEALVisitorProfileMetricAttribute.h>
+#import <TealiumTVOS/TEALVisitorProfilePropertyAttribute.h>
