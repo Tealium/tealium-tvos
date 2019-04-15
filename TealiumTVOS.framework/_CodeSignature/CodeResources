@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TEALConfiguration.h</key>
 		<data>
-		Mg8k9Eu1VWtVoC+0BqDFCINDnFw=
+		NS9n5GXZ5ayQADnho+s2do6UGCA=
 		</data>
 		<key>Headers/TEALConsentConstants.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/TEALDispatch.h</key>
 		<data>
-		vqZtDy3lnuzPQnuZJNPBs0+/nlo=
+		6j566bwQ/65/i7QT/wNUFF3GtbU=
 		</data>
 		<key>Headers/TEALLogLevels.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Headers/TealiumDelegate.h</key>
 		<data>
-		zk8hrYiKhkakCyottUrsowpt57U=
+		Ap5vOpMBUZsau8q/I9cGoLC+FLM=
 		</data>
 		<key>Headers/TealiumTVOS.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TnQEd05wlJ+zrHK935TPLU0kPdc=
+		2bqzIYXDHVJZtRF4EIzgwt8mYLc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -122,11 +122,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Mg8k9Eu1VWtVoC+0BqDFCINDnFw=
+			NS9n5GXZ5ayQADnho+s2do6UGCA=
 			</data>
 			<key>hash2</key>
 			<data>
-			5Ak9+cpIyx+2mYCXsHTShkFdKZsSe0UHJFeuxoLeiG4=
+			Ve3mMUjA4bVbQ3ExncKZY98dsPyHmXrFmvvWGnppWow=
 			</data>
 		</dict>
 		<key>Headers/TEALConsentConstants.h</key>
@@ -188,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vqZtDy3lnuzPQnuZJNPBs0+/nlo=
+			6j566bwQ/65/i7QT/wNUFF3GtbU=
 			</data>
 			<key>hash2</key>
 			<data>
-			PfRPft5hQZGg0PtJdOxAihaMDgmZB1Mm6R/ce2N1xdk=
+			u1KNUi5fj8Z07V5Nnti/X1fw4kK2Pjs6dc+IOyR86eQ=
 			</data>
 		</dict>
 		<key>Headers/TEALLogLevels.h</key>
@@ -342,11 +342,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zk8hrYiKhkakCyottUrsowpt57U=
+			Ap5vOpMBUZsau8q/I9cGoLC+FLM=
 			</data>
 			<key>hash2</key>
 			<data>
-			mdlDWuvxjI/v9ct8APiSTdNYVvLtmDDmgtBwAwdKrFk=
+			R2Cdm/f9kAgCG2mvng/hPOLFV0E7NzmS7QYka3xxr5s=
 			</data>
 		</dict>
 		<key>Headers/TealiumTVOS.h</key>
