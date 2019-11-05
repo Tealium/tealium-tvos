@@ -87,7 +87,7 @@ class ProgressViewController: UIViewController {
     
     // MARK: Convenience
     
-    func timerDidFire() {
+    @objc func timerDidFire() {
         /*
          Update the `completedUnitCount` of the `NSProgress` object if it's
          not completed. Otherwise, stop the timer.

@@ -22,7 +22,7 @@ class SegmentedControlsViewController: UIViewController {
     fileprivate func configureCustomBackgroundSegmentedControl() {
         // Set the background images for each control state.
         let normalSegmentBackgroundImage = UIImage(named: "stepper_and_segment_background")
-        customBackgroundSegmentedControl.setBackgroundImage(normalSegmentBackgroundImage, for: UIControlState(), barMetrics: .default)
+        customBackgroundSegmentedControl.setBackgroundImage(normalSegmentBackgroundImage, for: UIControl.State(), barMetrics: .default)
 
         let disabledSegmentBackgroundImage = UIImage(named: "stepper_and_segment_background_disabled")
         customBackgroundSegmentedControl.setBackgroundImage(disabledSegmentBackgroundImage, for: .disabled, barMetrics: .default)
@@ -32,21 +32,21 @@ class SegmentedControlsViewController: UIViewController {
 
         // Set the divider image.
         let segmentDividerImage = UIImage(named: "stepper_and_segment_divider")
-        customBackgroundSegmentedControl.setDividerImage(segmentDividerImage, forLeftSegmentState: UIControlState(), rightSegmentState: UIControlState(), barMetrics: .default)
+        customBackgroundSegmentedControl.setDividerImage(segmentDividerImage, forLeftSegmentState: UIControl.State(), rightSegmentState: UIControl.State(), barMetrics: .default)
 
         // Create a font to use for the attributed title (both normal and highlighted states).
-        let captionFontDescriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: UIFontTextStyle.caption1)
+        let captionFontDescriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: UIFont.TextStyle.caption1)
         let font = UIFont(descriptor: captionFontDescriptor, size: 0)
 
         let normalTextAttributes = [
-            NSForegroundColorAttributeName: UIColor.purple,
-            NSFontAttributeName: font
+            NSAttributedString.Key.foregroundColor: UIColor.purple,
+            NSAttributedString.Key.font: font
         ]
-        customBackgroundSegmentedControl.setTitleTextAttributes(normalTextAttributes, for: UIControlState())
+        customBackgroundSegmentedControl.setTitleTextAttributes(normalTextAttributes, for: UIControl.State())
 
         let highlightedTextAttributes = [
-            NSForegroundColorAttributeName: UIColor.purple,
-            NSFontAttributeName: font
+            NSAttributedString.Key.foregroundColor: UIColor.purple,
+            NSAttributedString.Key.font: font
         ]
         customBackgroundSegmentedControl.setTitleTextAttributes(highlightedTextAttributes, for: .highlighted)
     }
