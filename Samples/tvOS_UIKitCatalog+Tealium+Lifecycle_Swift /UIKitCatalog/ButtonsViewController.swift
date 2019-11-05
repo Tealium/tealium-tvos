@@ -38,20 +38,24 @@ class ButtonsViewController: UIViewController {
     
     fileprivate func configureAttributedTextSystemButton() {
         let buttonTitle = NSLocalizedString("Button", comment: "")
-        
+        var normalTitleAttributes = [NSAttributedString.Key : Any]()
+        var highlightedTitleAttributes = [NSAttributedString.Key : Any]()
+        //var highlightedTitleAttributes = [NSAttributedString.Key : Any]()
         // Set the button's title for normal state.
-        let normalTitleAttributes = [
-            NSForegroundColorAttributeName: UIColor.blue,
-            NSStrikethroughStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue
-        ] as [String : Any]
+        normalTitleAttributes  = [
+            NSAttributedString.Key.foregroundColor: UIColor.blue,
+            NSAttributedString.Key.strikethroughStyle: NSUnderlineStyle.single.rawValue
+        ]
+        
         let normalAttributedTitle = NSAttributedString(string: buttonTitle, attributes: normalTitleAttributes)
-        attributedTextButton.setAttributedTitle(normalAttributedTitle, for: UIControlState())
+        attributedTextButton.setAttributedTitle(normalAttributedTitle, for: UIControl.State())
         
         // Set the button's title for highlighted state.
-        let highlightedTitleAttributes = [
-            NSForegroundColorAttributeName: UIColor.green,
-            NSStrikethroughStyleAttributeName: NSUnderlineStyle.styleThick.rawValue
-        ] as [String : Any]
+        highlightedTitleAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.green,
+            NSAttributedString.Key.strikethroughStyle: NSUnderlineStyle.thick.rawValue
+        ]
+        
         let highlightedAttributedTitle = NSAttributedString(string: buttonTitle, attributes: highlightedTitleAttributes)
         attributedTextButton.setAttributedTitle(highlightedAttributedTitle, for: .highlighted)
     }

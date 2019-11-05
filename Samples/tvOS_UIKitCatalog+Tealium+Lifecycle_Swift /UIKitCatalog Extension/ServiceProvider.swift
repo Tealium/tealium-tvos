@@ -58,8 +58,8 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
             }
             
             // Create a `TVContentItem` to group the `TVContentItem`s into a section.
-            guard let sectionIdentifier = TVContentIdentifier(identifier: group.rawValue, container: nil) else { fatalError("Error creating content identifier for section item.") }
-            guard let sectionItem = TVContentItem(contentIdentifier: sectionIdentifier) else { fatalError("Error creating section content item.") }
+            let sectionIdentifier = TVContentIdentifier(identifier: group.rawValue, container: nil)
+            let sectionItem = TVContentItem(contentIdentifier: sectionIdentifier)
             
             sectionItem.title = group.rawValue
             sectionItem.topShelfItems = contentItems
@@ -92,8 +92,8 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
 
     /// Returns a `TVContentItem` for a `DataItem`.
     fileprivate func contentItemWithDataItem(_ dataItem: DataItem) -> TVContentItem {
-        guard let contentIdentifier = TVContentIdentifier(identifier: dataItem.identifier, container: nil) else { fatalError("Error creating content identifier.") }
-        guard let contentItem = TVContentItem(contentIdentifier: contentIdentifier) else { fatalError("Error creating content item.") }
+        let contentIdentifier = TVContentIdentifier(identifier: dataItem.identifier, container: nil)
+        let contentItem = TVContentItem(contentIdentifier: contentIdentifier)
         
         contentItem.title = dataItem.title
         contentItem.displayURL = dataItem.displayURL as URL

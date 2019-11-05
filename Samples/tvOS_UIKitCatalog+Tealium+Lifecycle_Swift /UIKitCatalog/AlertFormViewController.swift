@@ -130,7 +130,7 @@ class AlertFormViewController: UIViewController {
     
     // MARK: Convenience
     
-    func handleTextFieldTextDidChangeNotification(_ textField: UITextField) {
+    @objc func handleTextFieldTextDidChangeNotification(_ textField: UITextField) {
         guard let secureTextAlertAction = secureTextAlertAction else { fatalError("secureTextAlertAction has not been set") }
         
         // Enforce a minimum length of >= 5 characters for secure text alerts.
